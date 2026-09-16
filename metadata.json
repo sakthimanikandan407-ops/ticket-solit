@@ -1,0 +1,6 @@
+{
+  "name": "TicketSplit",
+  "description": "Peer-to-peer expense sharing and instant UPI settlement for flatmates and groups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

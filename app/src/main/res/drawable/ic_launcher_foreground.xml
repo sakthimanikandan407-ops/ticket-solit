@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Ticket Card Body (Emerald Green) -->
+    <path
+        android:fillColor="#00855D"
+        android:pathData="M34,26 L74,26 A10,10 0 0,1 84,36 L84,48 A6,6 0 0,0 84,60 L84,72 A10,10 0 0,1 74,82 L34,82 A10,10 0 0,1 24,72 L24,60 A6,6 0 0,0 24,48 L24,36 A10,10 0 0,1 34,26 Z" />
+    <!-- White Perforation Notches on sides -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,48 A6,6 0 0,1 24,60 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M84,48 A6,6 0 0,0 84,60 Z" />
+    <!-- Rupee Symbol (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,34 L60,34 M48,37 L58,37 M52,34 L52,43 A5,5 0 0,0 57,43 M51,43 L60,51"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:strokeWidth="2.4" />
+    <!-- Perforation Dashes -->
+    <path
+        android:fillColor="#A7F3D0"
+        android:pathData="M33,54 L37,54 M41,54 L45,54 M49,54 L53,54 M55,54 L59,54 M63,54 L67,54 M71,54 L75,54"
+        android:strokeColor="#A7F3D0"
+        android:strokeLineCap="round"
+        android:strokeWidth="2.2" />
+    <!-- Left Button: White Circle with Left Arrow -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,68 A7,7 0 1,1 44,67.9 Z" />
+    <path
+        android:fillColor="#00855D"
+        android:pathData="M45,64 L41,68 L45,72 Z" />
+    <!-- Right Button: Electric Indigo Circle with Right Arrow -->
+    <path
+        android:fillColor="#645EFB"
+        android:pathData="M64,68 A7,7 0 1,1 64,67.9 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M63,64 L67,68 L63,72 Z" />
+</vector>
