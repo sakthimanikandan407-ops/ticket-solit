@@ -1,0 +1,16 @@
+{
+  "name": "TicketSplit - Group Expenses & UPI",
+  "short_name": "TicketSplit",
+  "description": "Peer-to-peer expense sharing and instant UPI settlement for flatmates and groups.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF8FF",
+  "theme_color": "#006948",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23006948'/><path d='M30 50h40M50 30v40' stroke='%2385F8C4' stroke-width='10' stroke-linecap='round'/></svg>",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

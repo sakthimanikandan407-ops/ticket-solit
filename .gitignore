@@ -1,18 +1,50 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+
+# Production / Bundles
+dist/
+**/dist/
+build/
+**/build/
+out/
+
+# Android & Gradle
+.gradle/
+**/.gradle/
 *.iml
-.gradle
-.kotlin
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
+.kotlin/
+local.properties
+captures/
 .externalNativeBuild
 .cxx
-local.properties
-.env
 debug.keystore
+
+# IDEs and editors
+.idea/
+**/.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Test reports & logs
+test-reports/
+**/test-reports/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System files
+.DS_Store
+Thumbs.db

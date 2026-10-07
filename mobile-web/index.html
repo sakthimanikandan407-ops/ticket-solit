@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#006948" />
+  <meta name="description" content="TicketSplit - Peer-to-peer expense sharing and instant UPI settlement for flatmates and groups." />
+  <title>TicketSplit — Flat Expenses & UPI</title>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23006948'/><path d='M30 50h40M50 30v40' stroke='%2385F8C4' stroke-width='10' stroke-linecap='round'/></svg>" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app-viewport">
+    <!-- Desktop Responsive Toolbar (Visible on Wide Displays) -->
+    <header class="desktop-bar">
+      <span>📱 TicketSplit Mobile App</span>
+      <div style="display: flex; gap: 8px;">
+        <button id="btn-supabase-status" class="desktop-btn" title="Supabase Database Status">
+          <i class="fa-solid fa-database" style="color: var(--emerald-primary);"></i> Backend
+        </button>
+        <button id="btn-toggle-frame" class="desktop-btn" title="Toggle smartphone frame bezel">
+          <i class="fa-solid fa-mobile-screen"></i> Frame: ON
+        </button>
+        <button id="btn-toggle-theme" class="desktop-btn" title="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i> Theme
+        </button>
+        <button id="btn-qr-share" class="desktop-btn" title="Open on smartphone via Wi-Fi">
+          <i class="fa-solid fa-qrcode"></i> Open on Phone
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Shell Container -->
+    <main class="mobile-shell frame-mode" id="mobile-shell">
+      <!-- Simulated Phone Status Bar -->
+      <header class="mobile-status-bar">
+        <span id="live-clock">9:41</span>
+        <div class="status-notch"></div>
+        <div class="status-icons">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-full"></i>
+        </div>
+      </header>
+
+      <!-- App Header Bar -->
+      <nav class="app-topbar" id="app-topbar">
+        <!-- Rendered dynamically by router -->
+      </nav>
+
+      <!-- Dynamic Screen Content Area -->
+      <section class="app-main" id="app-main">
+        <!-- Injected by app.js router -->
+      </section>
+
+      <!-- Floating Action Button (+ Add Expense) -->
+      <button class="floating-fab" id="fab-add-expense">
+        <i class="fa-solid fa-plus"></i> Add Expense
+      </button>
+
+      <!-- Bottom Navigation Bar with Home, Groups, Settle UPI, Activity, Settings -->
+      <nav class="app-bottombar" id="app-bottombar">
+        <div class="nav-item" data-route="home">
+          <i class="fa-solid fa-house nav-icon"></i>
+          <span class="nav-label">Home</span>
+        </div>
+        <div class="nav-item active" data-route="groups">
+          <i class="fa-solid fa-users nav-icon"></i>
+          <span class="nav-label">Groups</span>
+        </div>
+        <div class="nav-item" data-route="upi_flow">
+          <i class="fa-solid fa-bolt nav-icon" style="color: var(--emerald-primary);"></i>
+          <span class="nav-label">Settle UPI</span>
+        </div>
+        <div class="nav-item" data-route="activity">
+          <i class="fa-solid fa-clock-rotate-left nav-icon"></i>
+          <span class="nav-label">Activity</span>
+        </div>
+        <div class="nav-item" data-route="settings">
+          <i class="fa-solid fa-gear nav-icon"></i>
+          <span class="nav-label">Settings</span>
+        </div>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Hidden Camera / File Input for Real Receipt Uploads -->
+  <input type="file" id="camera-file-input" accept="image/*" capture="environment" style="display: none;" />
+
+  <!-- Modal Bottom Sheet (Settle Drawer / OCR / QR Share / Auth / Edit UPI) -->
+  <aside class="modal-backdrop" id="modal-sheet">
+    <div class="bottom-sheet-content" id="sheet-inner">
+      <div class="sheet-handle"></div>
+      <div class="sheet-header">
+        <h3 class="sheet-title" id="sheet-title">Settle with UPI</h3>
+        <button class="close-btn" id="btn-close-sheet" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="sheet-body">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification Pill -->
+  <div class="toast-container" id="app-toast">
+    <i class="fa-solid fa-circle-check" style="color: var(--mint-primary-fixed);"></i>
+    <span id="toast-text">Action completed successfully</span>
+  </div>
+
+  <!-- Application Entry Script -->
+  <script type="module" src="/src/app.js"></script>
+</body>
+</html>

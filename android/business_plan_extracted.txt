@@ -1,0 +1,230 @@
+TicketSplit
+The Ongoing Group Expense Ledger for India — Built to Work With GPay, BHIM & PhonePe
+Business Plan & Financial Projections
+Prepared September 2026  ·  Confidential
+Table of Contents
+1. Executive Summary
+TicketSplit is a group-expense management app built specifically for India. It is positioned deliberately as a companion to UPI apps, not a replacement for them: TicketSplit owns the ongoing group ledger — who paid what, across weeks or months, for rent, trips, and recurring shared costs — and hands off the actual money movement to whichever UPI app (GPay, PhonePe, BHIM, Paytm) the user already has installed.
+This positioning is a direct response to market reality rather than a first-choice strategy: both Google Pay and BHIM already ship native "split an expense" features, so competing on basic split-and-settle against apps already on every phone is not viable (see Section 6). Both native tools are built for a single, one-off transaction — one dinner, one outing. Neither is built to manage a running group ledger across dozens of expenses over months, which is the actual daily pain point for flat-shares, PG rent, and long trips. That gap is where TicketSplit competes.
+The product targets the everyday moments Indians already split money for: flat-shares and PG rent, group trips, office lunches, and festival or wedding pooling. Because splitting a bill inherently involves inviting friends into a group, the app has a natural, low-cost viral growth loop layered on top of paid acquisition.
+Monetization is ads and affiliate-led rather than subscription-led: contextual, native suggestion cards (travel bookings, PG/furniture rentals, food delivery, event services) are surfaced at high-intent moments — inside a specific group's flow, and after a settlement is completed — rather than as generic banner ads. This is also a byproduct of the positioning: GPay and BHIM have no reason to build monetization into a utility split feature, and BHIM specifically is a public-interest NPCI product that never will. A dedicated app has room to add a commercial layer that the incumbents structurally don't.
+Over a 36-month plan, the model projects growth from a 2,000-user launch cohort to roughly 650,000 monthly active users (MAU), reaching approximately ₹4.0 crore in annual revenue and turning cash-flow positive in Year 3 on a ₹1.5 crore (₹15 million) seed raise. Full assumptions and month-by-month detail are in the accompanying financial model (TicketSplit_Financial_Model.xlsx).
+2. Problem & Opportunity
+2.1 The problem
+Splitting expenses among roommates, travel groups, and colleagues is a universal, recurring hassle in India — rent, groceries, trips, and office lunches all involve shared costs.
+Existing global tools (Splitwise, Tricount, Settle Up) were built before UPI existed. They track balances but leave the actual money-moving step to a separate, manual WhatsApp nudge.
+Both Google Pay and BHIM now ship native bill-splitting inside the payment app itself — GPay's "Split an expense" (live since 2021) and BHIM 3.0's "Split Expenses" and "Family Mode" (rolled out 2025-2026). This closes the exact UPI-settlement gap that most standalone splitting apps were built to solve, and it does so for free, pre-installed on the majority of Indian smartphones.
+What neither native tool does well: manage an ongoing group across many expenses over time. Both are designed around a single bill in a single moment — they don't hold a running rent-plus-electricity-plus-groceries ledger for a flat-share across months, don't do itemized/OCR receipt splitting, and don't surface spending patterns across a group's history. That gap — not "can this app do UPI" — is the real remaining problem.
+2.2 The opportunity
+India has one of the largest and fastest-growing digital payment bases in the world, with active UPI users estimated in the range of 500 million and growing. Group financial coordination — rent, trips, shared meals — is a near-daily behavior for a large share of this base, particularly students, young professionals, and urban flat-sharers. The opportunity is narrower than "replace how India splits bills" (that layer is being commoditized by GPay/BHIM) and is instead "own the ongoing group ledger and the commercial layer on top of it" — still a multi-million-MAU addressable behavior even at a conservative single-digit share of the SAM (see TAM/SAM/SOM in Section 4).
+3. Product Overview
+3.1 Positioning: ledger, not payment rail
+TicketSplit deliberately does not try to out-build GPay or BHIM's payment execution. It owns the group ledger — the running record of who paid what across an entire flat-share, trip, or recurring arrangement — and on settlement, hands off to the user's own UPI app via deep link to actually move money. The pitch to users is closer to "the smart group ledger that works with whichever UPI app you already use" than "a new way to pay."
+3.2 Core features
+Create a group (trip, flat-share, office team, event) and add expenses with even or custom splits, tracked continuously across the life of the group — not one bill at a time.
+One-tap "Settle Up" that hands off to the user's UPI app of choice (GPay, PhonePe, BHIM, Paytm) via deep link/intent to complete the actual transfer.
+Recurring split reminders and a running monthly ledger for rent, WiFi, and shared subscriptions — the multi-expense, multi-month tracking that native GPay/BHIM split tools don't attempt.
+Itemized/OCR receipt splitting for restaurant and grocery bills, including GST line items.
+Real-time "Trip Mode" running total, with offline support that syncs when connectivity returns.
+Shareable balance links so a group member can see what they owe without installing the app — reduces onboarding friction and disputes.
+3.3 Monetization surface (ads & affiliate)
+Trigger
+Surfaced Offer
+Placement
+Group named/tagged as a trip
+Flights, hotels, forex cards, travel insurance
+Native "smart suggestion" card inside group screen
+Recurring rent/PG split
+Furniture rental, broadband, PG/flat listings
+Post-settlement summary screen
+Frequent food-expense group
+Food delivery offers/cashback codes
+Secondary tab, never on the add-expense screen
+Large one-time pooling group
+Gifting, event planning, catering/decor
+Sponsored group template
+Hard rule carried into the product spec: no ads on the add-expense or settle screens; only category-level context (e.g. "travel", "rent") is ever shared with an ad/affiliate partner — never amounts or names.
+4. Market Analysis
+Figures below are illustrative sizing built from publicly reported UPI adoption figures and the founder's estimate of the addressable behavior (frequent group-expense splitting), not a commissioned market study.
+Layer
+Definition
+Estimated size
+TAM
+Active UPI users in India (broad digital-payments base)
+~500 million
+SAM
+Urban/semi-urban smartphone users who regularly share living costs, travel, or recurring group spend (students, young professionals, flat-shares)
+~50–70 million
+SOM (3-yr target)
+Realistic captured MAU by end of Year 3 given a crowded, multi-app category
+~650,000 (≈1% of SAM)
+Sources (UPI adoption): NPCI-linked industry aggregation sites (Demandsage, GrabOn, CoinLaw) reporting active UPI users in the 500–800 million range for 2026, with figures varying by methodology (registered vs. transaction-active accounts). We anchor SAM/SOM to the more conservative end.
+5. Business Model & Monetization
+5.1 Why ads + affiliate, not subscription
+The bill-splitting category in India has trained users to expect a fully free product — several competitors explicitly market "no ads, no paywalls" as their core pitch. Introducing a subscription would fight that expectation directly. Ads and affiliate revenue let TicketSplit stay free on the surface while monetizing high-intent context (a named trip, a rent group, a recurring food group) that is unusually rich for this category compared to a generic app.
+5.2 Revenue streams and rollout
+Phase 1 (Month 1+): Aggregator affiliate links (Amazon Associates-style, EarnKaro-style, Swiggy/Zomato referral codes) — zero business-development lift, works from day one.
+Phase 2 (10,000+ MAU): Direct affiliate deals with travel (Ixigo, MakeMyTrip), rental/furniture (NoBroker, Furlenco), and food delivery partners for better commission rates.
+Phase 3 (50,000+ MAU): Sponsored category placements and sponsored trip/rent group templates, sold as flat-fee placements to brands.
+Ongoing: Native ad-network fill (India-focused networks such as InMobi) for lower-intent moments, as a backstop rather than the primary revenue driver.
+5.3 Blended ARPU assumption
+The financial model assumes blended ARPU (ads + affiliate combined) rising from roughly ₹1.3 per MAU per month at launch to roughly ₹8.0 per MAU per month by Month 36, as fill rates, direct deals, and sponsored placements mature. This is a founder estimate, not derived from a comparable company's disclosed numbers, and is the single most important sensitivity in the model (see Section 9.3).
+6. Competitive Landscape
+This category has three distinct tiers of competitor, and the most important one is easy to miss on a first pass: the UPI platforms themselves.
+6.1 Tier 1 — the UPI platforms (the real competitive threat)
+Google Pay has shipped a native "Split an expense" feature inside group chats since 2021, still live and active in 2026: it creates the group, splits the bill, and sends a payment request through UPI, all inside an app already installed on most Indian smartphones. BHIM — the NPCI-owned reference UPI app — went further with BHIM 3.0 (rolled out through 2025-2026), adding "Split Expenses," a "Family Mode" for onboarding family members and assigning shared payments, and a spend-analytics dashboard, all for free, from a government-linked utility with no commercial pressure to ever monetize it.
+This means the core mechanic most standalone splitting apps are built around — split a bill, trigger UPI settlement — is already commoditized by the two platforms with the largest default distribution in the country. TicketSplit cannot and does not compete for the single, one-off "split this dinner bill" use case; GPay and BHIM win that by default. Both native tools are visibly built for a single transaction in a single moment, not for holding a running ledger across a flat-share's rent, electricity, and groceries over months — that gap is where Tier 2 and TicketSplit compete instead.
+6.2 Tier 2 — dedicated India-native splitting apps
+Competitor
+UPI-native?
+Monetization
+TicketSplit's angle
+Splitwise / Tricount / Settle Up (global)
+No / limited
+Freemium subscription, ads on free tier
+India-first UX, full UPI hand-off, no subscription wall
+India-native entrants (e.g. Niptao, The Hisaab, FairShare, Splitkaro, Zedger)
+Yes — most explicitly position as "smarter than GPay/BHIM split" for ongoing group tracking
+Mostly free, ad-free, some subscription (₹37.5–450/yr)
+Same ongoing-ledger niche; must out-execute on depth (OCR, recurring rent, analytics) plus a non-intrusive monetization layer
+Tier 2 players have already reached the same conclusion TicketSplit has: don't compete with GPay/BHIM on one-off splits, compete on ongoing group-ledger depth. Several already market themselves this way. This narrows TicketSplit's true competitive set to these apps, not to the platforms — but it also means the "ongoing ledger" niche is not empty.
+6.3 Where TicketSplit differentiates within Tier 2
+Execution depth: recurring rent/utility ledgers across months, itemized OCR receipt splitting with GST line items, and group-history analytics — the specific things GPay/BHIM's one-off tools don't attempt.
+A monetization layer competitors mostly avoid: because several Tier 2 apps lead with "free and ad-free" as their pitch, TicketSplit's ads/affiliate model must be executed carefully — genuinely non-intrusive, never on the core ledger screens, and valuable enough (real travel/rental/food offers tied to what the group is actually doing) that it reads as a perk rather than the thing users are trying to avoid by picking a competitor.
+Positioning honesty: marketing that says "we work with your GPay/BHIM/PhonePe, we just remember what one-off splits can't" rather than implying TicketSplit replaces the UPI apps users already trust for the actual money movement.
+7. Go-to-Market Strategy
+7.1 Initial wedge
+Rather than launching broad, target one high-frequency use case first — flat-share/PG rent-splitting in 2-3 metro cities (e.g. Bengaluru, Pune, Hyderabad) with dense student/young-professional flat-sharing populations. Rent groups are recurring (monthly), which builds habitual usage faster than one-off trip groups.
+7.2 Channels
+Referral/viral loop: every group invite is a natural acquisition channel — incentivize the inviter and invitee with a small affiliate-funded reward (e.g. a discount code) rather than cash, to keep CAC low.
+Campus and PG-community partnerships: tie-ups with PG aggregators (NoBroker, Stanza Living, Zolo) and college hostel communities for initial distribution.
+Performance marketing on Instagram/YouTube Shorts targeting 18-30 urban audience, budgeted per the CAC assumptions in the financial model.
+Content/SEO around "Splitwise alternative India" and "UPI bill split app" queries, an already-active search category per competitor content strategies observed.
+7.3 Retention
+Recurring rent/subscription groups are the primary retention anchor (monthly forced re-engagement).
+Push/WhatsApp reminders for pending settlements keep groups active without requiring a native app open.
+8. Technology & Roadmap
+8.1 Stack (indicative)
+Mobile: React Native (single codebase, faster iteration for a small early team).
+Backend: Node.js/Postgres, hosted on a managed cloud (AWS/GCP) with autoscaling tied to MAU growth.
+Payments: UPI deep-link/intent integration (no PA/PG license required at this stage, since TicketSplit never custodies funds — it only triggers a UPI request between the two parties' own apps).
+Messaging: WhatsApp Business API for settlement reminders and balance links.
+8.2 12-month product roadmap
+Q1: MVP — groups, expenses, UPI settle-up, shareable balance link.
+Q2: Recurring rent groups, WhatsApp reminders, offline mode.
+Q3: Native affiliate/ad suggestion cards, receipt scanning (OCR) for restaurant/grocery bills including GST line items.
+Q4: Sponsored group templates, analytics dashboard for "who owes the most," referral program.
+9. Financial Summary
+Full month-by-month detail, all formulas, and every assumption are in TicketSplit_Financial_Model.xlsx (tabs: Assumptions, 3-Yr Model, Annual Summary, Funding Ask). Headline figures:
+Metric
+Year 1
+Year 2
+Year 3
+Ending MAU
+~62,800
+~304,300
+~650,300
+Total Revenue
+₹6.3 lakh
+₹88.4 lakh
+₹3.99 crore
+  – Ad Revenue
+₹4.5 lakh
+₹54.8 lakh
+₹2.29 crore
+  – Affiliate Revenue
+₹1.9 lakh
+₹33.7 lakh
+₹1.70 crore
+Total Costs
+₹51.1 lakh
+₹1.64 crore
+₹3.00 crore
+Net Profit / (Loss)
+(₹44.8 lakh)
+(₹75.7 lakh)
+₹99.1 lakh
+Ending Cash Balance
+₹1.05 crore
+₹29.5 lakh
+₹1.29 crore
+9.1 Path to profitability
+The model turns cash-flow positive on a monthly basis around Month 27-30 and shows a positive full-year net profit in Year 3 (~₹99 lakh), as blended ARPU compounds faster than the cost of the growing team and marketing spend. Minimum cash balance across the 36 months is approximately ₹19.3 lakh (Month 27), meaning the ₹1.5 crore seed is sized to avoid a bridge round if growth and ARPU assumptions hold within a reasonable range.
+9.2 Team & hiring plan (cost basis for the model)
+Phase
+Team size (approx.)
+Monthly team cost
+Months 1-3
+Founder + 1 developer
+₹1.2 lakh
+Months 4-9
++1 developer, 1 designer, 1 growth hire (4-5 people)
+₹3.0 lakh
+Months 10-12
++1 ops/support hire (~6 people)
+₹4.5 lakh
+Months 13-18
+Year 2 scale-up (~8 people)
+₹8.0 lakh
+Months 19-24
+~11-12 people
+₹12.0 lakh
+Months 25-30
+Year 3 scale-up (~16 people)
+₹18.0 lakh
+Months 31-36
+~19-20 people
+₹22.0 lakh
+9.3 Key sensitivities
+Blended ARPU is the single biggest lever — the model assumes it triples from Year 1 to Year 3 as affiliate deals move from aggregator links to direct partnerships. If direct deals take longer to close, revenue in Years 2-3 could fall meaningfully short.
+Net MAU growth rate (60% → 5% monthly, tapering) assumes a strong viral/referral loop; if organic virality underperforms, paid acquisition share and CAC spend both rise, compressing margins.
+Churn (8% → 4% monthly) assumes recurring rent-group usage meaningfully improves retention over time; if it doesn't, MAU and revenue both come in lower than projected.
+10. Funding Ask & Use of Funds
+Seed ask: ₹1.5 crore (₹15,000,000), sized to fund approximately 36 months of runway to sustained profitability under the base-case assumptions above.
+Use of funds
+% of round
+₹ Amount
+Product & Engineering (team)
+45%
+₹67.5 lakh
+Growth & Marketing (CAC spend)
+25%
+₹37.5 lakh
+Infrastructure & Tooling
+8%
+₹12.0 lakh
+Legal, Compliance & Admin
+7%
+₹10.5 lakh
+Business Development (affiliate deals)
+5%
+₹7.5 lakh
+Contingency / Buffer
+10%
+₹15.0 lakh
+11. Risks & Mitigation
+Risk
+Mitigation
+Platform risk: GPay and BHIM already ship native split-expense features with default distribution on most Indian smartphones
+Do not compete on the one-off split-and-settle use case at all — concede it explicitly. Compete only on the ongoing, multi-expense group ledger (recurring rent, OCR receipts, group-history analytics) that neither platform is built to do well, and design GPay/BHIM as the payment execution layer TicketSplit hands off to, not a rival to be replaced.
+Google or NPCI extends their native split feature to cover recurring/ongoing groups, closing the remaining gap
+This is the single biggest structural risk and cannot be fully mitigated — only hedged by moving fast on depth (analytics, OCR, affiliate-relevant context) that a payments-first team is less likely to prioritize, and by building switching cost through historical group data the user would lose by leaving.
+Category is also crowded with free, ad-free, India-native Tier 2 competitors (Section 6.2)
+Differentiate on execution depth and keep ads genuinely unobtrusive; treat affiliate offers as a perk (real discounts) rather than generic ad clutter.
+Affiliate/ad ARPU assumptions don't materialize as fast as modeled
+Phase 1 aggregator links require no partnerships and can start immediately; delay in Phase 2/3 direct deals mainly pushes out profitability timing rather than threatening solvency, given the cash buffer built into the model.
+Users resist any monetization in a "money app"
+Hard product rule: never place ads/offers on the add-expense or settle-up screens; only category-level context is used for targeting, never amounts or names.
+WhatsApp Business API or UPI deep-link policies change
+No funds are ever custodied by TicketSplit (settlement happens directly between users' own UPI apps via hand-off), which limits regulatory exposure versus a payments/wallet license holder.
+12. Appendix: Model Assumptions Reference
+All financial figures in this plan are drawn from TicketSplit_Financial_Model.xlsx. Key assumption ranges (Month 1 → Month 36):
+Starting MAU: 2,000 · Seed funding: ₹1.5 crore
+Net MAU growth rate: 60% → 5% monthly (tapering)
+Monthly churn rate: 8% → 4%
+Paid acquisition share of new users: 50% → 15%
+CAC (paid users): ₹30 → ₹18
+ARPU – Ads: ₹1.0 → ₹4.5 per MAU/month
+ARPU – Affiliate: ₹0.3 → ₹3.5 per MAU/month
+Infra cost per MAU: ₹0.25 → ₹0.10 per month
+All figures are founder projections for planning purposes and have not been audited or independently verified. Market sizing in Section 4 is anchored to third-party UPI adoption reporting current as of mid-2026; company-specific figures throughout are estimates.
